@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>633</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="enterBtn">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>540</y>
+      <width>861</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>链接</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="turn_Left">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>370</y>
+      <width>31</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>左
+转</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="turn_Right">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>370</y>
+      <width>31</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+    </property>
+    <property name="text">
+     <string>右
+转</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>13</y>
+      <width>471</width>
+      <height>471</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>497</y>
+      <width>861</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,11,1,4">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>IP地址:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="serverIPLineEdit"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>端口号:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="portText"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>371</y>
+      <width>321</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="forward_Left">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>左前进</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="forward">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>前进</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="forward_Right">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>右前进</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="move_Left">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>左移</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="Stop">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>停止</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="move_Right">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>右移</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="backward_Left">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>左后退</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="back">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>后退</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="backward_Right">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+ background-color:rgb(220,220,120);
+}
+QPushButton:pressed {
+  background-color:rgb(220,0,0);
+}</string>
+       </property>
+       <property name="text">
+        <string>右后退</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>label_3</zorder>
+   <zorder>enterBtn</zorder>
+   <zorder>turn_Left</zorder>
+   <zorder>turn_Right</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>984</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTCP">
+    <property name="title">
+     <string>小车TCP客户端</string>
+    </property>
+   </widget>
+   <addaction name="menuTCP"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
