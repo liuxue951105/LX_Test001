@@ -1,5 +1,5 @@
 QT       += core gui network
-# 添加一个文件
+# 添加一个文件注释0804
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++11
